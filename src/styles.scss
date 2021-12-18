@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 36px !important;
+}
+
+p {
+    font-size: 18px !important;
+}
+
+.bg-pink {
+    background-color: #FA2759;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-grey {
+    background-color: #1A1A1A !important;
+}
+
+.bg-blue {
+    background-color: #2DFCD8;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.c-blue {
+    color: #2DFCD8 !important;
+}
+
+.c-pink {
+    color: #FA2759 !important;
+}
+
+.c-white {
+    color: white !important;
+}
+
+.full-screen {
+    height    : calc(100vh - 102px) !important;
+    width     : 100%;
+    max-height: 100%;
+}
+
+
+
+.pr-130 {
+    padding-right: 130px;
+}
+
+.pl-130 {
+    padding-left: 130px;
+}
+
+
+
+
+@media(max-width: 1000px) {
+
+    .mobile-hidden {
+        display: none !important;
+    }
+
+    .pr-130 {
+        padding-right: 50px;
+    }
+    
+    .pl-130 {
+        padding-left: 50px;
+    }
+
+}
