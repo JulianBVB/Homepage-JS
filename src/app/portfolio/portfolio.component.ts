@@ -51,26 +51,23 @@ export class PortfolioComponent implements OnInit {
     },
 
     {
+      name: "Lieferando",
+      picture: "lieferando.png",
+      description: "a copy of lieferando",
+      language: "javascript",
+      link: "http://stahl-julian.de/Portfolio/Lieferando/index.html"
+    },
+
+    {
       name: "My own page",
       picture: "homepageJS.jpg",
       description: "My own page",
       language: "angular",
       link: ""
     },
-
-    {
-      name: "Lieferando",
-      picture: "lieferando.png",
-      description: "a copy of lieferando",
-      language: "javascript",
-      links: "http://stahl-julian.de/Portfolio/Lieferando/index.html"
-    },
-
-
-
   ];
 
-  
+
   languages!: any[];
 
 
