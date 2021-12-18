@@ -1,0 +1,142 @@
+.portfolio-details {
+    display        : flex;
+    justify-content: center;
+    flex-wrap      : wrap;
+
+    a {
+        text-align   : center;
+    }
+}
+
+
+.portfolio-mobile {
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+    align-items    : center;
+}
+
+.card-container {
+    height   : 15rem;
+    width    : 25rem;
+    margin   : 35px;
+    max-width: 100%;
+}
+
+
+
+.portfolio-style {
+    z-index        : 1;
+    opacity        : 0;
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+
+.portfolio-style:hover {
+    cursor : pointer;
+    opacity: 1;
+}
+
+.portfolio-style:hover+.portfolio-img {
+    opacity: 0.1;
+}
+
+.portfolio-img {
+    position  : absolute;
+    max-width : 100%;
+    max-height: 100%;
+    overflow  : hidden;
+
+    img {
+        max-width : 100%;
+        max-height: 100%;
+    }
+}
+
+.social-media-icon {
+    object-fit   : contain;
+    height       : 35px;
+    margin-left  : 4px;
+    margin-right : 4px;
+    margin-bottom: 4px;
+}
+
+.btn-primary {
+    background-color: black !important;
+    color           : white !important;
+    border-color    : #FA2759 !important;
+    width           : 18vw;
+    height          : 7vh;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+
+    &:hover {
+        background-color: #FA2759 !important;
+        color           : black !important;
+    }
+}
+
+.actualFilter {
+    background-color: #FA2759 !important;
+    color           : black !important;
+}
+
+.btn-secondary {
+    background-color: transparent !important;
+    color           : #FA2759 !important;
+    border-color    : #FA2759 !important;
+    width           : 18vw;
+    height          : 7vh;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+
+    &:hover {
+        background-color: #FA2759 !important;
+        color           : black !important;
+    }
+}
+
+
+@media(max-width: 700px) {
+
+    .card-container {
+
+        margin       : unset;
+        max-width    : 100%;
+        height       : 11rem;
+        border       : unset !important;
+        border-radius: unset !important;
+
+    }
+
+    .full-portfolio {
+        display       : flex;
+        flex-direction: column;
+        margin-top    : 60px;
+        width         : 100%;
+    }
+
+    .mobile {
+        padding-right: 16px;
+        padding-left : 16px;
+    }
+
+    .btn {
+        font-size   : 15px;
+        margin-right: 1rem !important;
+    }
+
+    .btn-secondary{
+        width           : 32vw;
+
+    }
+
+
+}

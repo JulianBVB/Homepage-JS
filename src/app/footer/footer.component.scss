@@ -1,0 +1,18 @@
+.footer-imprint{
+    background-color: white!important;
+    color: black!important;
+
+    a {
+        color: black!important;
+    }
+
+    p {
+        color: black!important;
+    }
+}
+
+@media(max-width: 700px) {
+    .mobile-container-1{
+        justify-content: center!important;
+    }
+}

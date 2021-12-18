@@ -1,0 +1,19 @@
+.progress {
+
+    height: 2rem;
+    background-color: unset;
+
+    img {
+        width       : 2rem;
+        height      : 2rem;
+        margin-right: 15px;
+    }
+}
+
+@media(max-width: 1065px) {
+
+    .mobile-container-1{
+        width: 80%!important;
+    }
+
+}

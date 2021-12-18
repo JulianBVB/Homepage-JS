@@ -1,0 +1,40 @@
+.btn-primary {
+    background-color: black !important;
+    color           : #2DFCD8 !important;
+    border-color    : #2DFCD8 !important;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    width           : 14vw;
+    height          : 5vh;
+
+    &:hover {
+        background-color: #2DFCD8 !important;
+        color           : white !important;
+    }
+}
+
+
+.height {
+    height: 120px !important;
+}
+
+
+.form-control.ng-touched.ng-invalid {
+    border: 1px solid red;
+}
+
+.form-control.ng-touched.ng-valid {
+    border: 1px solid green;
+}
+
+
+@media screen and (max-width: 768px) {
+    .mobile {
+        width: 100% !important;
+    }
+
+    .mobile-container-1 {
+        flex-direction: column;
+    }
+}

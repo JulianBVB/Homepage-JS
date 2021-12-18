@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-center flex-column align-items-center bg-grey pt-5 pb-5 pr-130 pl-130">
+    <h2 class="c-white">MY Skills</h2>
+    <div style="width: 50%;;" class="d-flex justify-content-center flex-column mobile-width me-4 mobile-container-1">
+        <div  data-aos="fade-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2500" class="progress mt-3" *ngFor="let skill of skills">
+            <img src="/assets/img/{{skill.picture}}">
+            <div class="progress-bar rounded-pill" role="progressbar" style="width:{{skill.level}}%" aria-valuemin="0"
+                aria-valuemax="100">{{skill.name}}</div>
+        </div>
+    </div>
+</div>

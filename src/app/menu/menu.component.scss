@@ -1,0 +1,40 @@
+.header-logo {
+    width  : 70px;
+    height : 70px;
+    z-index: 1;
+
+
+    &:hover {
+        cursor   : pointer;
+        transform: scale(1.35)
+    }
+
+}
+
+.navbar {
+    padding-bottom: unset;
+}
+
+.nav-link:hover {
+    color    : #FA2759 !important;
+    font-size: 20px;
+}
+
+
+
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.menu-imprint {
+    background-color: white !important;
+    color           : black !important;
+
+    a {
+        color: black !important;
+    }
+}
+
+.navbar-toggler {
+    background-color: #1A1A1A !important;
+}

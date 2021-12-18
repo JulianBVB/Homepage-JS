@@ -1,0 +1,36 @@
+<div class="bg-black pt-5 mobile pr-130 pl-130">
+    <h2 class="text-center c-white pb-5">Portfolio</h2>
+
+    <div class="d-flex justify-content-center">
+        <button id="all" (click)="filter('all')" type="button" class="btn btn-primary btn-lg me-5">All</button>
+        <button id="javascript" (click)="filter('javascript')" type="button" class="btn btn-primary btn-lg me-5">Javascript</button>
+        <button id="angular" (click)="filter('angular')" type="button" class="btn btn-primary btn-lg me-5">Angular</button>
+    </div>
+
+    <div class="portfolio-details mt-3">
+        <div data-aos="zoom-out-right" data-aos-duration="2500" *ngFor="let portfolio of languages" class="full-portfolio {{portfolio.language}}">
+            <div class="portfolio-mobile bg2">
+                <div class="card card-container bg2">
+                    <div id="{{portfolio.name}}"
+                        class="card-body d-flex flex-column justify-content-center align-items-center bg2">
+                        <div class="portfolio-style">
+                            <h5 class="card-title c-pink">{{portfolio.name}}</h5>
+                            <p class="card-text">{{portfolio.description}}</p>
+                            <a class="btn btn-secondary d-flex align-items-center justify-content-center" target="_blank" rel="noopener noreferrer"
+                                href="{{portfolio.link}}">Try it yourself</a>
+                        </div>
+                        <a class="portfolio-img">
+                            <img src="assets/img/portfolio/{{portfolio.picture}}">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-3 pb-5"> Please have a look to my github account <a target="_blank" rel="noopener noreferrer"
+            href="https://github.com/JulianBVB"><img class="social-media-icon" src="assets/img/GitHub-Logo.png"></a>
+    </div>
+
+</div>

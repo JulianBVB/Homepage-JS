@@ -1,0 +1,55 @@
+<div class="pt-5 bg-black pr-130 pl-130">
+
+
+    <h2 class="text-center c-blue">Contact me</h2>
+    <p class="d-flex justify-content-center mobile-container-1 text-center c-white pb-5">
+        Get in touch via the form below, or by emailing &nbsp;
+        <a href="mailto:developer@stahl-julian.de" class="c-blue">developer@stahl-julian.de</a>
+    </p>
+
+
+    <div class="d-flex justify-content-center">
+        <form [formGroup]="exform" class="w-50 p-3 mobile">
+            <div class="row">
+                <div class="col">
+                    <label class="c-white mt-3" for="formGroupExampleInput">Name<span class="c-pink">*</span></label>
+                    <input name="name" type="name" class="form-control bg-grey c-white mt-3" formControlName="name"
+                        placeholder="Enter your name">
+                    <small *ngIf="name?.invalid && name?.touched" class="text-danger">Name is
+                        Required</small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="c-white mt-3" for="exampleFormControlInput1">Email<span class="c-pink">*</span></label>
+                <input name="email" type="email " class="form-control bg-grey c-white mt-3" formControlName="email"
+                    id="exampleFormControlInput1" placeholder="Enter your Email adress">
+                <small *ngIf="email?.invalid && email?.touched" class="text-danger">Email is
+                    Required</small>
+            </div>
+
+            <div class="form-group">
+                <label class="c-white mt-3" for="exampleFormControlInput1">Phone<span class="c-pink">*</span></label>
+                <input name="phone" type="phone " class="form-control bg-grey c-white mt-3" formControlName="phone"
+                    id="exampleFormControlInput1" placeholder="Enter your phone number">
+                <small *ngIf="phone?.invalid && phone?.touched" class="text-danger">Phone is
+                    Required</small>
+            </div>
+
+            <div class="form-group">
+                <label class="c-white mt-3" for="exampleFormControlTextarea1">Message<span
+                        class="c-pink">*</span></label>
+                <textarea name="message" class="form-control bg-grey c-white mt-3 height" formControlName="message"
+                    id="exampleFormControlTextarea1" placeholder="Enter your message" rows="3"></textarea>
+                <small *ngIf="message?.invalid && message?.touched" class="text-danger">Message is Required (minimum
+                    length 15)</small>
+            </div>
+
+            <div class="d-flex justify-content-end mt-3">
+                <button type="button" class="btn btn-primary btn-lg" (click)="clicksub()" [disabled]="exform.invalid">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
