@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 
 
@@ -11,7 +12,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private firestore: AngularFirestore) { }
 
   exform!: FormGroup;
 
@@ -32,6 +33,12 @@ export class ContactComponent implements OnInit {
 
   clicksub() {
     console.log(this.exform.value);
+
+    this
+    .firestore
+    .collection('Messages')
+    .add(this.exform.value);
+
     this.exform.reset();
   }
 

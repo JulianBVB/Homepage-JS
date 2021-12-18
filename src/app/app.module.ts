@@ -14,6 +14,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { StartComponent } from './start/start.component';
 import { StartScreenComponent } from './start-screen/start-screen.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+
+
 
 
 @NgModule({
@@ -31,9 +37,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     StartScreenComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebase),
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

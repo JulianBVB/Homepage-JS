@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "julian-stahl-f2070": {
+      "hosting": {
+        "Julian-Stahl": [
+          "julian-stahl-f2070"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "julian-stahl-f2070"
+  }
+}
