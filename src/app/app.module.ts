@@ -18,6 +18,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 
 
@@ -34,7 +35,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     MySkillsComponent,
     PortfolioComponent,
     StartComponent,
-    StartScreenComponent
+    StartScreenComponent,
+    ThankYouComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),

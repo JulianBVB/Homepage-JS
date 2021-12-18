@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Router } from '@angular/router';
 
 
 
@@ -12,7 +13,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(private firestore: AngularFirestore) { }
+  constructor(private firestore: AngularFirestore, private router: Router) { }
 
   exform!: FormGroup;
 
@@ -40,6 +41,8 @@ export class ContactComponent implements OnInit {
     .add(this.exform.value);
 
     this.exform.reset();
+
+    this.router.navigate(["/thank-you"]);
   }
 
   get name() {
