@@ -74,7 +74,6 @@ export class PortfolioComponent implements OnInit {
 
   filter(language: string) {
 
-    document.getElementById("all")?.classList.remove("actualFilter");
     document.getElementById("javascript")?.classList.remove("actualFilter");
     document.getElementById("angular")?.classList.remove("actualFilter");
 
